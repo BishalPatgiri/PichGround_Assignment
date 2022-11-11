@@ -12,7 +12,7 @@ todoRouter.post("/create", async (req, res) => {
 
 todoRouter.post("/list",async (req, res) => {
   const todolist=await todoModel.find()
-  res.send({"todolist":todolist}) 
+  res.json(todolist) 
 });
 
 todoRouter.post("/mark-as-done",async (req, res) => {
