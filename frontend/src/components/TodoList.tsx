@@ -22,8 +22,8 @@ export const TodoList = ({label,todoData,handleToggle,handleDelete}:input) => {
           <div style={{display:"flex",justifyContent:"space-between",width:"90%",margin:"auto",backgroundColor:"white",padding:"15px",marginTop:"10px"}} key={ele._id}>
            <h3 style={{textDecoration:ele.status?"line-through":"none",width:"25%"}}>{ele.name}</h3>
            <h3 style={{width:"25%"}}>{ele.status?("Completed"):("Not Completed")}</h3>
-           <button style={{cursor:"pointer",width:"25%",padding:"12px 10px",color:"white",backgroundColor:"yellowgreen",border:"0",borderRadius:"6px",marginLeft:"10px"}} onClick={()=>handleToggle(ele._id,ele.status)}>Toggle</button>
-           <button style={{cursor:"pointer",width:"25%",padding:"12px 10px",color:"white",backgroundColor:"red",border:"0",borderRadius:"5px",marginLeft:"10px"}} onClick={()=>handleDelete(ele._id)}>Delete</button>
+           <button data-testid="toggle" style={{cursor:"pointer",width:"25%",padding:"12px 10px",color:"white",backgroundColor:"yellowgreen",border:"0",borderRadius:"6px",marginLeft:"10px"}} onClick={()=>handleToggle(ele._id,ele.status)}>Toggle</button>
+           <button data-testid="delete" style={{cursor:"pointer",width:"25%",padding:"12px 10px",color:"white",backgroundColor:"red",border:"0",borderRadius:"5px",marginLeft:"10px"}} onClick={()=>handleDelete(ele._id)}>Delete</button>
           </div>
         ))
       }
