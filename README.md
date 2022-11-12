@@ -1,4 +1,4 @@
-# PichGround_Assignment
+# PitchGround_Assignment
 #### In this project I have made an Todo App with TypeScript and using my own backend.
 ### Teckstack used in this project:
 - ReactJS
